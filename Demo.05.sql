@@ -23,3 +23,44 @@ where FirstName in ('Michael')
 select * from Sales.Customer
 where StoreID > 100 
 or (StoreID < 500 and StoreID > 600)
+
+
+
+
+
+
+
+
+
+
+
+
+use AdventureWorks2016
+
+SELECT * FROM Person.Person
+Create view vw_Persona2
+as 
+
+SELECT FirstName, LastName  FROM Person.Person
+where FirstName LIKE 'Adam'
+
+select * from vw_Persona
+
+
+
+
+
+
+Create view vw_Persona4
+ as 
+ Select 
+ concat(FirstName, LastName) as Datos 
+from Person.Person
+where  LastName like 'Adams'
+
+
+SELECT * from vw_Persona4
+
+
+
+
