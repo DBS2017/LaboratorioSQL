@@ -1,0 +1,7 @@
+-- Poner en uso la base de datos 
+Use AdventureWorksDW2016
+
+--Listado de esquemas pertenecientes a esta bd 
+
+--Ver  de tabla  de bd en uso
+select name from sys.tables;
